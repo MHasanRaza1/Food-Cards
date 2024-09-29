@@ -14,6 +14,9 @@ const Modal = ({ modal, setModal,data }) => {
                 <div className='modal-wrapper'>
                     <div className="main-image">
                         <img src={image} alt="" />
+                        <div className="close-mobile" onClick={() => setModal(false)}>
+                            <img src="/assets/icons/cross.png" />
+                        </div>
                     </div>
                     <div className="data">
                         <h3>{name}</h3>

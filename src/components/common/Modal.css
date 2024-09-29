@@ -10,6 +10,7 @@
 
 .main-image {
     width: 50%;
+    position: relative;
 }
 
 .main-image img {
@@ -69,6 +70,9 @@
 .close img {
     width: 100%;
 }
+.close-mobile{
+    display: none;
+}
 
 @media screen and (max-width:1210px) {
     .modal-wrapper{
@@ -106,7 +110,14 @@
 
 @media screen and (max-width:900px) {
     .modal-wrapper{
+        width: 60%;
         height: 250px;
+    }
+    .main-image{
+        width: 100%;
+    }
+    .data{
+        width: 100%;
     }
 }
 
@@ -118,29 +129,38 @@
 
 @media screen and (max-width:768px) {
     .modal-wrapper{
-        height: 400px;
-        width: 80%;
+        height: 600px;
+        width: 65%;
         flex-direction: column;
         align-items: center;
-        top: 48%;
+        top: 60%;
     }
     .close{
-        top: -275px;
+        display: none;
     }
-    .close img{
+    .close-mobile{
+        display: block;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        top: 20px;
+        right: 20px;
+    }
+    .close-mobile img{
         background-color: #ddd;
         padding: 4px;
+        height: 20px;
     }
-    /* .main-image {
+    .main-image {
         width: 100%;
         height: 50%;
     }
     .main-image img{
         width: 100%;
-        height: 200px;
+        /* height: 200px; */
     }
     .data {
         width: 100%;
         height: 50%;
-    } */
+    }
 }

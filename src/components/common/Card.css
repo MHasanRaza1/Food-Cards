@@ -19,20 +19,26 @@
     filter: brightness(70%);
 }
 
-.name p{
+.name{
     position: absolute;
     top: 15px;
     left: 15px;
+}
+
+.name p{
     font-weight: 600;
     color: #fff;
 }
 
-.price p{
+.price{
     position: absolute;
-    background-color: #fff;
-    font-weight: 600;
     bottom: 15px;
     right: 15px;
+}
+
+.price p{
+    background-color: #fff;
+    font-weight: 600;
     padding: 10px 10px;
     border-radius: 20px;
 }

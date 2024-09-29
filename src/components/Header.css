@@ -17,7 +17,7 @@
 .navbar{
     display: flex;
     list-style-type: none;
-    gap: 30px;
+    gap: 20px;
 }
 
 .navbar li{
@@ -36,10 +36,18 @@
 }
 
 @media screen and (max-width:768px) {
-    .menu{
-        display: block;
+    .header-wrapper{
+        padding: 10px 20px;
+        align-items: center;
+    }
+    .logo img{
         width: 40px;
         height: 40px;
+    }
+    .menu{
+        display: block;
+        width: 30px;
+        height: 30px;
     }
     .menu img{
         width: 100%;
@@ -54,18 +62,17 @@
         flex-direction: column;
         align-items: center;
         position: absolute;
-        top: 6rem;
+        top: 4rem;
         left: 0;
         background-color: #000;
         z-index: 1;
         width: 100%;
         border-radius: 20px;
-        transition: max-height 0.5s ease-in-out;
-        max-height: 0px;
+        height: 0px;
         overflow: hidden;
     }
     .mobile-nav.open{
-        max-height: 300px;
+        height: 190px;
     }
     .mobile-nav li{
         padding: 10px;
